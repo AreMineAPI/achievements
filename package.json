@@ -1,0 +1,32 @@
+{
+  "name": "@mineapi/achievements",
+  "version": "1.0.4",
+  "description": "The easiest way to create Minecraft achievements.",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "ts-node --transpile-only ./examples/index.spec.ts",
+    "build": "tsc && npm run copy:files",
+    "copy:files": "cpx \"src/assets/**/*\" \"dist/src/assets\" && cpx \"README.md\" \"dist\""
+  },
+  "keywords": [
+    "minecraft",
+    "achievements",
+    "minecraft-achievements"
+  ],
+  "author": "MineAPI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Are/MineAPI/achievements",
+    "homepage": "https://mineapi.me"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "canvas": "^2.9.3"
+  },
+  "devDependencies": {
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  }
+}
